@@ -1,4 +1,4 @@
-## Phil's Blog. Daily builds on Blog.
+## Blog built in Laravel
 
 ## Built on Laravel:
 
