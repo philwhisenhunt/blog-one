@@ -1,5 +1,5 @@
 
-        @extends ('layout')
+        @extends ('layouts.master')
 
 @section ('content')
 <h1> The list of posts should be showing here</h1>
