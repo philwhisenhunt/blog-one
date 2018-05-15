@@ -25,7 +25,7 @@
                     </a>
                     {{$post->body}}
                 </li>
-                @endforeach
+            @endforeach
         </ul>
     </body>
 </html>

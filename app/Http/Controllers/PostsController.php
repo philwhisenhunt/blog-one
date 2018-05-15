@@ -24,6 +24,7 @@ public function index()
             // return $post;
             //var_dump($post);
         //die ('hi');
+        
         return view('posts.show', compact('post'));
 
     }
@@ -31,8 +32,12 @@ public function index()
     public function list(Post $post)
     
     {
-         // I WANT to show all the posts here. So perhaps a for loop? 
-        return view('posts.show', compact('post'));
+        //Show all of the posts here. 
+         $posts = Post::all();
+
+        
+
+        return view('posts.list', compact('post'));
 
     }
 }

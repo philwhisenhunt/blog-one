@@ -133,11 +133,13 @@
 // Route::get('/posts', 'PostsController@index');
 Route::get('/', 'PostsController@index');
 
+Route::get('/posts', 'PostsController@list');
+
 Route::get('/posts/{post}', 'PostsController@show');
 
 //How do I get them all here?? ----- **** BELOW 
 
-// Route::get('/posts', 'PostsController@index');
+
 
 //controller => PostsController
 

@@ -2,7 +2,7 @@
         @extends ('layout')
 
 @section ('content')
-<h1> Posts are going to go here </h1>
+<h1> The list of posts should be showing here</h1>
 
         <h1>{{ $post->title }}</h1>
         <p>{{ $post->body }}</p>
