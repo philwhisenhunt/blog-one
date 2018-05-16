@@ -1,5 +1,5 @@
 
-        @extends ('layouts.master')
+@extends ('layouts.master')
 
 @section ('content')
 <h1> Posts are going to go here </h1>

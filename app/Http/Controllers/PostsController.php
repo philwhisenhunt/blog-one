@@ -40,7 +40,30 @@ public function index()
         return view('posts.list', compact('post'));
 
     }
+
+
+    public function create()
+    
+    {
+
+
+        return view('posts.create');
+
+    }
+
+    public function store()
+
+    {
+        dd(request()->all());
+ 
+        // Create a new post using the request data
+        // Save it to the database
+        // And then redirect to the home page.  
+
+    }
+
 }
+
 
 // public function index()
 
