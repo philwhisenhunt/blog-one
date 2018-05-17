@@ -22,15 +22,15 @@
   <body>
 
 @include ('layouts.nav')
+<!-- @include ('layouts.jumbo') -->
 
 @yield ('content')
+
 
 @include ('layouts.sidebar')
 
 
-      </div><!-- /.row -->
 
-    </main><!-- /.container -->
 
 @include ('layouts.footer')
   </body>
