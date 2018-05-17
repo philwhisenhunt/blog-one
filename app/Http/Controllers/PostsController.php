@@ -8,7 +8,7 @@ class PostsController extends Controller
 {
     //
     
-public function index()
+    public function index()
 
     {
         //
@@ -24,6 +24,7 @@ public function index()
             // return $post;
             //var_dump($post);
         //die ('hi');
+
         
         return view('posts.show', compact('post'));
 
@@ -33,7 +34,7 @@ public function index()
     
     {
         //Show all of the posts here. 
-         $posts = Post::all();
+        
 
         
 
