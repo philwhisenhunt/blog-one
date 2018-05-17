@@ -54,11 +54,30 @@ public function index()
     public function store()
 
     {
-        dd(request()->all());
- 
+        // dd(request(['title','body']));
+
+        // dd(request()->all);
+
         // Create a new post using the request data
-        // Save it to the database
+        // $post = new Post;
+
+        // $post->title = request('title'); 
+
+        // $post->body = request('body');
+
+
+        // // Save it to the database
+
+        // $post->save();
         // And then redirect to the home page.  
+        $this->validate(request(), [
+            'title'=> 'required',
+            'body' => 'required'
+        ]);
+
+        Post::create(request(['title', 'body']));
+
+        return redirect('/');
 
     }
 
