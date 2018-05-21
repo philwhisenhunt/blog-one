@@ -12,5 +12,8 @@ class Post extends Model
     // }
 
     // protected $fillable = ['title', 'body'];
+    // protected $guarded = []
+
+//This is an extenstion of Model.php
 }
  
