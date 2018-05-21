@@ -2,7 +2,9 @@
 
 namespace App;
 
-class Post extends Model
+use Illuminate\Database\Eloquent\Model as Eloquent;
+
+class Model extends Eloquent
 {
     //
 
@@ -11,6 +13,5 @@ class Post extends Model
     //     return static::where('completed', 0)->get();
     // }
 
-    // protected $fillable = ['title', 'body'];
+    protected $guarded = [];
 }
- 

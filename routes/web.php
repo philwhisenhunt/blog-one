@@ -136,7 +136,8 @@ Route::get('/', 'PostsController@index');
 // 
 Route::get('/posts/create', 'PostsController@create');  
 
-Route::get('/posts', 'PostsController@index');
+//this one has to be '@store'
+Route::post('/posts', 'PostsController@store');
 
 Route::get('/posts/{post}', 'PostsController@show'); 
 

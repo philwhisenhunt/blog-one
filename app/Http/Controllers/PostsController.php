@@ -12,7 +12,7 @@ class PostsController extends Controller
 
     {
         //
-        $posts = Post::all(); 
+        $posts = Post::latest()->get();
 
 
         return view('posts.index', compact('posts'));
@@ -34,7 +34,7 @@ class PostsController extends Controller
     
     {
         //Show all of the posts here. 
-        
+         
 
         
 
