@@ -15,5 +15,10 @@ class Post extends Model
     // protected $guarded = []
 
 //This is an extenstion of Model.php
+
+public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
 }
  
