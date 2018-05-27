@@ -71,10 +71,10 @@ class PostsController extends Controller
 
         // $post->save();
         // And then redirect to the home page.  
-        $this->validate(request(), [
-            'title'=> 'required',
-            'body' => 'required'
-        ]);
+        // $this->validate(request(), [
+        //     'title'=> 'required',
+        //     'body' => 'required'
+        // ]);
 
         Post::create(request(['title', 'body']));
 
