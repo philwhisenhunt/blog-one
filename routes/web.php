@@ -144,7 +144,7 @@ Route::get('/posts/{post}', 'PostsController@show');
 
 
 
-// Route::get('/posts', 'PostsController@list');
+Route::get('/posts', 'PostsController@list');
 
 
 // Route::get('/posts/{post}', 'PostsController@show');
