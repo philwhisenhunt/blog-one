@@ -1,5 +1,41 @@
 <?php
 
+
+Route::get('/', 'PostsController@index');
+
+// 
+Route::get('/posts/create', 'PostsController@create');  
+
+
+Route::post('/posts', 'PostsController@store');
+
+Route::get('/posts/{post}', 'PostsController@show'); 
+
+
+
+
+Route::get('/posts', 'PostsController@list');
+
+Route::post('/posts/{post}/comments', 'commentsController@store');
+
+
+
+// Route::get('/posts/{post}', 'PostsController@show');
+
+//How do I get them all here?? ----- **** BELOW 
+
+
+
+//controller => PostsController
+
+//Eloquent model =>post
+
+//migration => create_posts_table
+
+//should be able to make all three of these at once in one line of the command
+
+//OLD:
+
 // /*
 // |--------------------------------------------------------------------------
 // | Web Routes
@@ -131,33 +167,4 @@
 // use App\Post;
 
 // Route::get('/posts', 'PostsController@index');
-Route::get('/', 'PostsController@index');
-
-// 
-Route::get('/posts/create', 'PostsController@create');  
-
-//this one has to be '@store'
-Route::post('/posts', 'PostsController@store');
-
-Route::get('/posts/{post}', 'PostsController@show'); 
-
-
-
-
-Route::get('/posts', 'PostsController@list');
-
-
-// Route::get('/posts/{post}', 'PostsController@show');
-
-//How do I get them all here?? ----- **** BELOW 
-
-
-
-//controller => PostsController
-
-//Eloquent model =>post
-
-//migration => create_posts_table
-
-//should be able to make all three of these at once in one line of the command
 
