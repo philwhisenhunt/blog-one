@@ -6,7 +6,8 @@
     RewriteEngine On
 
     # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} ^civilmouse.com !-d
+    RewriteCond %{HTTP_HOST} !localhost
+    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
     RewriteRule ^(.*)/$ http://www.civilmouse.com /$1 [L,R=301]
 
     # Handle Front Controller...
