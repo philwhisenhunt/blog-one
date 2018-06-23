@@ -18,6 +18,9 @@ Route::get('/posts', 'PostsController@list');
 
 Route::post('/posts/{post}/comments', 'commentsController@store');
 
+Route::get('/register', 'RegistrationController@create');
+
+Route::get('/login', 'SessionsController@create');
 
 
 // Route::get('/posts/{post}', 'PostsController@show');
