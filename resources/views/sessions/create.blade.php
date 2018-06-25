@@ -24,6 +24,10 @@
             <input type="text" class="form-control" id="password" name="password">
         </div>
 
+        <div class="form-group">
+                <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+
     </form>
 </div>
 
